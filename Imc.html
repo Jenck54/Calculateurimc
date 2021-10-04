@@ -10,7 +10,21 @@
 </head>
 <body>
     <form action="" method="post">
-        <label for=""></label>
+        <div id="Texte">Calculer mon IMC</div>
+        <br>
+        <label for="Poids">Poids (kg) : </label>
+        <input type="number" name="Poids" id="Poids" placeholder="Ex : 70">
+        <br>
+        <br>
+        <label for="Taille">Taille (m) : </label>
+        <input type="number" name="Taille" id="Taille" placeholder="Ex : 1.7">
+        <br>
+        <br>
+        <input onclick="Valider()" id="submit" type="button" value="Calculer">
+        <input id="reset" type="reset" />
+        <br>
+        <br>
+        <div id="resultat"></div>
     </form>
 </body>
 </html>
